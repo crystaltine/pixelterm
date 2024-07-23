@@ -1,9 +1,9 @@
 from unittest import TestCase
-from charred import CharredFrame, term_height, term_width, adjust_for_anchor
+from pixelterm import PixeltermFrame, term_height, term_width, adjust_for_anchor
 
 class AutomatedTests(TestCase):
 	def test_frame_size(self):
-		frame = CharredFrame()
+		frame = PixeltermFrame()
 		
 		assert frame.pixels.shape[0] == term_height()
 		assert frame.pixels.shape[1] == term_width()

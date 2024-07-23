@@ -1,5 +1,5 @@
 [project]
-name = "charred_crystaltine"
+name = "pixelterm_crystaltine"
 version = "1.0.0"
 authors = [
   { name="crystaltine", email="msh379c@outlook.com" },
@@ -14,9 +14,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/crystaltine/charred"
-Issues = "https://github.com/crystaltine/charred/issues"
+Homepage = "https://github.com/crystaltine/pixelterm"
+Issues = "https://github.com/crystaltine/pixelterm/issues"
 
 [build-system]
-requires = ["setuptools>=61.0", "numpy", "scikit-image", "blessed"]
+requires = ["setuptools>=61.0", "numpy", "scikit-image"]
 build-backend = "setuptools.build_meta"

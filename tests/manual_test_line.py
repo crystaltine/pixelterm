@@ -1,11 +1,11 @@
 import sys
-sys.path.append('../charred')
+sys.path.append('../pixelterm')
 
-from charred import CharredFrame, term_width
+from pixelterm import PixeltermFrame, term_width
 from time import sleep
 
 def test_line_fully_contained():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((0, 0, 0))
 	
 	frame.add_line((5, 5), (10, 30), (255, 255, 255))
@@ -13,7 +13,7 @@ def test_line_fully_contained():
 	sleep(3)
 
 def test_line_both_endpoints_oob():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((0, 0, 0))
 	
 	frame.add_line((-5, -20), (100, 300), (255, 0, 255))
@@ -21,7 +21,7 @@ def test_line_both_endpoints_oob():
 	sleep(3)
 
 def test_line_one_endpoint_oob():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((0, 0, 0))
 	
 	frame.add_line((5, 10), (100, 300), (255, 0, 255))
@@ -29,7 +29,7 @@ def test_line_one_endpoint_oob():
 	sleep(3)
 
 def test_thick_line():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((0, 0, 0))
 	
 	frame.add_line((5, 5), (100, 40), (255, 255, 255), 3)
@@ -37,7 +37,7 @@ def test_thick_line():
 	sleep(3)
 
 def test_thick_line_oob():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((0, 0, 0))
 	
 	frame.add_line((-5, -50), (100, 40), (255, 255, 255), 3)

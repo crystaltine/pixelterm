@@ -1,12 +1,12 @@
 import numpy as np
 import sys
-sys.path.append('../charred')
+sys.path.append('../pixelterm')
 
-from charred import CharredFrame, term_width
+from pixelterm import PixeltermFrame, term_width
 from time import sleep
 
 def test_image_from_file_normal():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((255, 0, 255))
 	
 	frame.add_image_from_filepath("tests/assets/image.png", 5, 5)
@@ -14,7 +14,7 @@ def test_image_from_file_normal():
 	sleep(3)
 
 def test_image_from_file_clipped_topleft():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((255, 0, 255))
 	
 	frame.add_image_from_filepath("tests/assets/image.png", -1, -4)
@@ -22,7 +22,7 @@ def test_image_from_file_clipped_topleft():
 	sleep(3)
 
 def test_image_from_file_oob():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((255, 0, 255))
 	
 	frame.add_image_from_filepath("tests/assets/image.png", 0, -100)
@@ -30,7 +30,7 @@ def test_image_from_file_oob():
 	sleep(3)
 
 def test_image_from_file_clipped_right():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((255, 0, 255))
 	
 	frame.add_image_from_filepath("tests/assets/image.png", term_width()-3, 0)
@@ -38,7 +38,7 @@ def test_image_from_file_clipped_right():
 	sleep(3)
 
 def test_image_from_pixels():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((255, 0, 255))
 	
 	image = np.array([
@@ -51,7 +51,7 @@ def test_image_from_pixels():
 	sleep(3)
 
 def test_image_anchored_center():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill_with_gradient((0, 0, 0), (90, 0, 90))
 	
 	image = np.array([
@@ -65,7 +65,7 @@ def test_image_anchored_center():
 	sleep(3)
 
 def test_image_anchored_bottomright():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((255, 0, 255))
 	
 	image = np.array([

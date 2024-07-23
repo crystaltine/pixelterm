@@ -1,17 +1,17 @@
 import sys
-sys.path.append('../charred')
+sys.path.append('../pixelterm')
 
-from charred.frame import CharredFrame
+from pixelterm.frame import PixeltermFrame
 from time import sleep, perf_counter
 
 def test_gradient():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill_with_gradient((0, 0, 0), (255, 255, 255))
 	frame.render_raw()
 	sleep(3)
 
 def test_gradient_vertical():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill_with_gradient((0, 0, 0), (255, 255, 255), direction='vertical')
 	frame.render_raw()
 	sleep(3)
@@ -24,14 +24,14 @@ def test_animated_gradient():
 	color1 = (255, 0, 0)
 	color2 = (0, 255, 0)
 
-	prev = CharredFrame()
+	prev = PixeltermFrame()
 	prev.fill_with_gradient(color1, color2)
 	prev.render_raw()
 	frames_rendered += 1
 
 	while color1[0] != 0:
 		color1 = (color1[0]-1, color1[1], color1[2])
-		new_frame = CharredFrame()
+		new_frame = PixeltermFrame()
 		new_frame.fill_with_gradient(color1, color2)
 		new_frame.render(prev)
 		prev = new_frame

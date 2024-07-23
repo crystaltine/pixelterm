@@ -1,11 +1,11 @@
 import sys
-sys.path.append('../charred')
+sys.path.append('../pixelterm')
 
-from charred import CharredFrame, term_height, term_width
+from pixelterm import PixeltermFrame, term_height, term_width
 from time import sleep, perf_counter
 
 def test_frame_fill():
-	frame = CharredFrame()
+	frame = PixeltermFrame()
 	frame.fill((255, 255, 0))
 	frame.render_raw()
 	sleep(3)
@@ -16,14 +16,14 @@ def test_animated_fill():
 
 	color1 = (255, 0, 0)
 
-	prev = CharredFrame()
+	prev = PixeltermFrame()
 	prev.fill(color1)
 	prev.render_raw()
 	frames_rendered += 1
 
 	while color1[0] != 0:
 		color1 = (color1[0]-1, color1[1], color1[2])
-		new_frame = CharredFrame()
+		new_frame = PixeltermFrame()
 		new_frame.fill(color1)
 		new_frame.render(prev)
 		prev = new_frame

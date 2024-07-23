@@ -1,7 +1,7 @@
 import sys
-sys.path.append('../charred')
+sys.path.append('../pixelterm')
 
-from charred import move_xy
+from pixelterm import move_xy
 
 def test_move_1():
 	print(f"{move_xy(5, 5)}_ <- (5, 5)")
