@@ -28,8 +28,5 @@ Issues = "https://github.com/crystaltine/pixelterm/issues"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[keywords]
-terminal
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/pixelterm"]
