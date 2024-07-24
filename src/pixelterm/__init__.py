@@ -11,4 +11,4 @@ from .render_utils import (
 )
 from .cursor_utils import *
 
-Font.font1 = Font("pixelterm/fonts/font1.png")
+Font.font1 = Font("./fonts/font1.png")
