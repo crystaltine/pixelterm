@@ -11,4 +11,7 @@ from .render_utils import (
 )
 from .cursor_utils import *
 
-Font.font1 = Font("./fonts/font1.png")
+import os as _os
+
+font1_fp = _os.path.join(_os.path.dirname(__file__), "fonts", "font1.png")
+Font.font1 = Font(font1_fp)
