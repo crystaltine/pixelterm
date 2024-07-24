@@ -1,6 +1,3 @@
-import sys
-sys.path.append("../pixelterm")
-
 import random
 from pixelterm import PixeltermFrame
 

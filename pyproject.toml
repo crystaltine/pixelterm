@@ -10,7 +10,7 @@ requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+    "Operating System :: Microsoft :: Windows",
 ]
 
 [project.urls]
@@ -18,5 +18,5 @@ Homepage = "https://github.com/crystaltine/pixelterm"
 Issues = "https://github.com/crystaltine/pixelterm/issues"
 
 [build-system]
-requires = ["setuptools>=61.0", "numpy", "scikit-image"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

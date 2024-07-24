@@ -1,6 +1,3 @@
-import sys
-sys.path.append("../pixelterm")
-
 import traceback
 from time import time_ns
 from pixelterm import PixeltermFrame, hide_terminal_cursor, show_terminal_cursor

@@ -1,6 +1,5 @@
 import sys
 import time
-sys.path.append('../pixelterm')
 
 from pixelterm import hide_terminal_cursor, show_terminal_cursor, cleanup_after_termination
 

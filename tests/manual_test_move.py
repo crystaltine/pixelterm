@@ -1,6 +1,3 @@
-import sys
-sys.path.append('../pixelterm')
-
 from pixelterm import move_xy
 
 def test_move_1():

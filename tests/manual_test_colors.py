@@ -1,6 +1,3 @@
-import sys
-sys.path.append('../pixelterm')
-
 from pixelterm import fcode, text_style
 
 def test_text_styles():

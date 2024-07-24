@@ -1,6 +1,3 @@
-import sys
-sys.path.append('../pixelterm')
-
 from pixelterm import PixeltermFrame, cleanup_after_termination
 from time import sleep, perf_counter
 

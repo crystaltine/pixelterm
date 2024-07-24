@@ -1,6 +1,3 @@
-import sys
-sys.path.append('../pixelterm')
-
 from pixelterm import PixeltermFrame, Font
 from time import sleep
 

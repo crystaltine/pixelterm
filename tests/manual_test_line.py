@@ -1,6 +1,3 @@
-import sys
-sys.path.append('../pixelterm')
-
 from pixelterm import PixeltermFrame, term_width
 from time import sleep
 

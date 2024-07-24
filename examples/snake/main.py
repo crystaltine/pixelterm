@@ -1,6 +1,3 @@
-import sys
-sys.path.append("../pixelterm")
-
 from pixelterm import PixeltermFrame, Font, term_width, term_height, hide_terminal_cursor, show_terminal_cursor
 from snake import Snake
 from time import sleep
