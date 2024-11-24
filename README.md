@@ -12,6 +12,9 @@ The "pixels" Pixelterm uses are exactly 1 character wide and 1/2 of a character 
 
 *All custom fonts must be monospaced, and only one is provided by default. For details on how to create your own, see `pixelterm/font.py`. Note that these fonts will be relatively large because of the low number of pixels that can fit on a terminal screen.
 
+### Preview
+![image](https://github.com/user-attachments/assets/0c8b91fb-1f43-4f80-bff0-2b1bfcd1b3a9)
+
 ### Installation
 ```
 pip install pixelterm
